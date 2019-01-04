@@ -7,19 +7,14 @@ import Login from '../components/Login';
 import { authUser } from '../actions';
 
 class LoginPage extends Component {
-  componentDidMount() {
-    if (this.props.isAuthenticated) {
-      Router.push('/');
-    }
-  }
 
   render() {
     return (
-      !this.props.isAuthenticated && (
+      
         <BodyWrapper>
           <Login />
         </BodyWrapper>
-      )
+      
     );
   }
 }

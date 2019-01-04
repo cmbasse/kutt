@@ -120,6 +120,7 @@ class Login extends Component {
               Forgot your password?
             </ForgetPassLink>
             <ButtonWrapper>
+            {!this.props.auth.isAuthenticated && (
               <Button
                 icon={this.props.loading.login ? 'loader' : 'login'}
                 onClick={this.loginHandler}
@@ -127,6 +128,19 @@ class Login extends Component {
               >
                 Log in
               </Button>
+              )}
+              
+              {this.props.auth.isAuthenticated && (
+              <Button
+                icon={this.props.loading.signup ? 'loader' : 'signup'}
+                color="purple"
+                onClick={this.signupHandler}
+                big
+              >
+                Sign up
+              </Button>
+              )}
+              
             </ButtonWrapper>
             <Error type="auth" left={0} />
           </LoginBox>
@@ -140,6 +154,7 @@ Login.propTypes = {
   auth: PropTypes.shape({
     sentVerification: PropTypes.bool.isRequired,
     user: PropTypes.string.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired,
   }).isRequired,
   loading: PropTypes.shape({
     login: PropTypes.bool.isRequired,
