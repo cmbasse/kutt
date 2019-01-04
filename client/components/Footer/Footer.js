@@ -38,27 +38,11 @@ class Footer extends Component {
   render() {
     return (
       <Wrapper isAuthenticated={this.props.isAuthenticated}>
-        {!this.props.isAuthenticated && <ReCaptcha />}
+
         <Text>
-          Made with love by{' '}
-          <a href="//thedevs.network/" title="The Devs">
-            The Devs
-          </a>.{' | '}
-          <a
-            href="https://github.com/thedevs-network/kutt"
-            title="GitHub"
-            target="_blank" // eslint-disable-line react/jsx-no-target-blank
-          >
-            GitHub
+          <a href="https://creativeconners.com" title="Creative Conners">
+            Creative Conners
           </a>
-          {' | '}
-          <a href="/terms" title="Terms of Service" target="_blank">
-            Terms of Service
-          </a>
-          {' | '}
-          <a href="/report" title="Report abuse" target="_blank">
-            Report Abuse
-          </a>.
         </Text>
       </Wrapper>
     );

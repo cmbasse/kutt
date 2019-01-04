@@ -38,7 +38,6 @@ const Header = props => (
   <Wrapper>
     <LeftMenuWrapper>
       <HeaderLogo showPageLoading={props.showPageLoading} />
-      <HeaderLeftMenu />
     </LeftMenuWrapper>
     <HeaderRightMenu showPageLoading={props.showPageLoading} />
   </Wrapper>

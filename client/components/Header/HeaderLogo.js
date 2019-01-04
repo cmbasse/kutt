@@ -23,7 +23,7 @@ const LogoImage = styled.div`
   }
 
   img {
-    width: 18px;
+    width: 300px;
     margin-right: 11px;
   }
 `;
@@ -39,10 +39,7 @@ const HeaderLogo = props => {
 
   return (
     <LogoImage>
-      <a href="/" title="Homepage" onClick={goTo}>
-        <img src="/images/logo.svg" alt="" />
-        Kutt.it
-      </a>
+        <img src="/images/cci_header_logo.png" alt="" />
     </LogoImage>
   );
 };

@@ -29,12 +29,12 @@ class Homepage extends Component {
     const { isAuthenticated } = this.props;
     const needToLogin = !isAuthenticated && <NeedToLogin />;
     const table = isAuthenticated && <Table />;
+    const shortener = isAuthenticated && <Shortener />;
     return (
       <BodyWrapper>
-        <Shortener />
+        {shortener}
         {needToLogin}
         {table}
-        <Features />
         <Footer />
       </BodyWrapper>
     );

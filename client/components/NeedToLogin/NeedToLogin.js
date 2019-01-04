@@ -5,14 +5,10 @@ import Button from '../Button';
 import { fadeIn } from '../../helpers/animations';
 
 const Wrapper = styled.div`
-  position: relative;
-  width: 1200px;
-  max-width: 98%;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  margin: 16px 0 0;
-  animation: ${fadeIn} 0.8s ease-out;
-  box-sizing: border-box;
+  margin: 24px 0 64px;
 
   a {
     text-decoration: none;
@@ -74,15 +70,14 @@ const NeedToLogin = () => (
   <Wrapper>
     <TitleWrapper>
       <Title>
-        Manage links, set custom <b>domains</b> and view <b>stats</b>.
+        Creative Conners URL Shortener
       </Title>
-      <Link href="/login" prefetch>
-        <a href="/login" title="login / signup">
-          <Button>Login / Signup</Button>
+      <Link href="https://creativeconners.com" prefetch>
+        <a href="https://creativeconners.com" title="Creative Conners">
+          <Button>Creative Conners Website</Button>
         </a>
       </Link>
     </TitleWrapper>
-    <Image src="/images/callout.png" />
   </Wrapper>
 );
 

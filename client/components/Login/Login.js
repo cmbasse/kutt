@@ -127,14 +127,6 @@ class Login extends Component {
               >
                 Log in
               </Button>
-              <Button
-                icon={this.props.loading.signup ? 'loader' : 'signup'}
-                color="purple"
-                onClick={this.signupHandler}
-                big
-              >
-                Sign up
-              </Button>
             </ButtonWrapper>
             <Error type="auth" left={0} />
           </LoginBox>

@@ -25,10 +25,10 @@ class AppDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-          <title>Kutt.it | Modern Open Source URL shortener.</title>
+          <title>Creative Conners Link Shortener</title>
           <meta
             name="description"
-            content="Kutt.it is a free and open source URL shortener with custom domains and stats."
+            content="cci.fyi is Creative Conners URL Shortener based on the Kutt.it project"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Nunito:300,400,700"
@@ -40,16 +40,13 @@ class AppDocument extends Document {
           <link rel="apple-touch-icon" href="/images/favicon-196x196.png" />
           <link rel="mask-icon" href="/images/icon.svg" color="blue" />
 
-          <meta property="fb:app_id" content="123456789" />
-          <meta property="og:url" content="https://kutt.it" />
+          <meta property="og:url" content="http://cci.fyi" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Kutt.it" />
-          <meta property="og:image" content="https://kutt.it/images/card.png" />
-          <meta property="og:description" content="Free & Open Source Modern URL Shortener" />
-          <meta name="twitter:url" content="https://kutt.it" />
-          <meta name="twitter:title" content="Kutt.it" />
-          <meta name="twitter:description" content="Free & Open Source Modern URL Shortener" />
-          <meta name="twitter:image" content="https://kutt.it/images/card.png" />
+          <meta property="og:title" content="Creative Conners" />
+          <meta property="og:description" content="Creative Conners URL Shortener" />
+          <meta name="twitter:url" content="http://cci.fyi" />
+          <meta name="twitter:title" content="Creative Conners" />
+          <meta name="twitter:description" content="Creative Conners URL Shortener" />
 
           {this.props.styleTags}
 
