@@ -63,7 +63,7 @@ const SettingsApi = ({ apikey, generateKey, loader }) => (
     </p>
     <ApiKeyWrapper apikey={apikey}>
       {apikey && <ApiKey>{apikey}</ApiKey>}
-      <Button color="purple" icon={loader ? 'loader' : 'zap'} onClick={generateKey}>
+      <Button icon={loader ? 'loader' : 'zap'} onClick={generateKey}>
         {apikey ? 'Regenerate' : 'Generate'} key
       </Button>
     </ApiKeyWrapper>

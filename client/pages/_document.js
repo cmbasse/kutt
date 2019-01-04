@@ -34,11 +34,10 @@ class AppDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Nunito:300,400,700"
             rel="stylesheet"
           />
-          <link rel="icon" sizes="196x196" href="/images/favicon-196x196.png" />
-          <link rel="icon" sizes="32x32" href="/images/favicon-32x32.png" />
-          <link rel="icon" sizes="16x16" href="/images/favicon-16x16.png" />
-          <link rel="apple-touch-icon" href="/images/favicon-196x196.png" />
-          <link rel="mask-icon" href="/images/icon.svg" color="blue" />
+          <link rel="icon" sizes="300x300" href="/images/favicon-300x300.png" />
+          <link rel="icon" sizes="180x180" href="/images/favicon-180x180.png" />
+          <link rel="icon" sizes="81x81" href="/images/favicon-81x81.png" />
+          <link rel="apple-touch-icon" href="/images/favicon-300x300.png" />
 
           <meta property="og:url" content="http://cci.fyi" />
           <meta property="og:type" content="website" />

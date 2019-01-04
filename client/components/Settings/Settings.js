@@ -233,14 +233,6 @@ class Settings extends Component {
             <hr />
           </Fragment>
         )}
-        <SettingsDomain
-          handleCustomDomain={this.handleCustomDomain}
-          loading={this.props.domainLoading}
-          settings={this.props.settings}
-          showDomainInput={this.props.showDomainInput}
-          showModal={this.showModal}
-        />
-        <hr />
         <SettingsPassword
           message={this.state.passwordMessage}
           error={this.state.passwordError}
