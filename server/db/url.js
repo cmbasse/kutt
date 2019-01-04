@@ -160,7 +160,7 @@ exports.getUrls = ({ user, options }) =>
     session
       .readTransaction(tx =>
         tx.run(
-          `MATCH (u:USER { email: $email })-[:CREATED]->(l) ${searchQuery} ` +
+          `MATCH (u:USER)-[:CREATED]->(l) ${searchQuery} ` +
             'WITH l ORDER BY l.createdAt DESC ' +
             'WITH l SKIP $skip LIMIT $limit ' +
             'OPTIONAL MATCH (l)-[:USES]->(d) ' +
